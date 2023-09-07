@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <title>LCSINHS Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+<header>
+        <p>
+        <img src="img/Logo.png" alt="logo" height="200px" width="200px">
+        REPUBLIC OF THE PHILIPPINES DEPARTMENT OF EDUCATION REGION IV-A 
+        <br>
+        CALABARZON SCHOOLS DIVISION OF LIPA CITY
+        <h3>LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL</h3>
+        </p>
+</header>
+
+<p>Instruction: Write clearly in CAPITAL LETERS your personal information in the box provided or check the box when appropriate. </p>
+<p>PLEASE ANSWER ALL ITEMS. ALL ENTRIES AND SIGNATURE IN THIS FORM MUST BE ORIGINAL.</p>
+
+<hr>
+
+<div class="container">
+    <form action="connect.php"  method="post">
+    <h2> FORM A | Personal Information </h2>
+    <h5> Personal Data: </h5>
+    <h5> 1. Name of Pupil Applicant </h5>
+        <div class="personal-info">
+            <div class="input-box">
+                <span class="details"> First Name </span>
+                <input type="text" name="firstname" placeholder="First Name" required>
+            </div>
+            <div class="wrapper">
+                <div class="box box1"> <input type="file" name="photo"> </div>
+            </div>
+            <div class="input-box">
+                <span class="details"> Middle Name </span>
+                <input type="text" name="middlename" placeholder="Middle Name" required>
+            </div>
+            <div class="input-box">
+                <span class="details"> Last Name </span>
+                <input type="text" name="lastname" placeholder="Last Name" required>
+            </div>
+            <div class="bd-box">
+                <h5> 2. Birthdate </h5>
+                <input type="date" name="date" placeholder="Month / Date / Year" required>
+            </div>
+            <div class="in-box">
+                <h5> 3. Sex </h5>
+                <input type="radio" id="female" name="gender" value="f">
+                <label> Female </label>
+                <input type="radio" id="male" name="gender" value="m">
+                <label> Male </label>
+            </div>
+            <div class="input-box">
+                <h5> 4. Contact Numbers </h5>
+                <span class="details"> Please include all possible contact numbers: </span>
+                <input type="tel" id="phone" name="phone" placeholder="09**-***-****" pattern="[0-9-0-0]{0-0-0}-[0-0-0-0]" required>
+                <input type="tel" id="phone" name="phone" placeholder="09**-***-****" pattern="[0-9-0-0]{0-0-0}-[0-0-0-0]" required>
+            </div>
+                <div class="input-box">
+                <h5> 5. Email Address </h5>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <h5> 6. Complete Home / Permanent Address </h5>
+                <input type="text" name="address" placeholder="Home Address" required>
+            </div>
+            <div class="bd-box">
+                <h5> 7. Name of City / Municipality (of your residence) </h5>
+                <input type="text" name="city" placeholder="City / Municipality" required>
+            </div>
+            <div class="bd-box">
+                <h5> 8. Name of School Last Attended (Write full name of school): </h5>
+                <input type="text" name="schooladdress" placeholder="School" required>
+            </div>
+            <div class="input-box">
+                <h5> 9. Complete School Address: </h5>
+                <input type="text" name="schooladdress" placeholder="School Address" required>
+            </div>
+            <div class="input-box">
+                <h5> 10. School Contact Number: </h5>
+                <input type="text" name="schoolnum" placeholder="School Contact Number" required>
+            </div>
+            <div class="in-box">
+                <h5> 11. School Type </h5>
+                <input type="radio" id="private" name="school" value="pri">
+                <label> Private </label>
+                <input type="radio" id="public" name="school" value="pub">
+                <label> Public </label>
+            </div>
+            <div class="input-box">
+                <h5> LRN (Learner's Reference No.) </h5>
+                <input type="number" name="lrn" placeholder="Reference Number" required>
+            </div>
+</div>
+<hr>
+
+<h2> FORM B | Certificate of Good Moral Character </h2>
+<h4>TO WHOM IT MAY CONCERN: </h4>
+<p> This is to certify that <input type="text" placeholder="Name of Applicant" required> has consistently maintained good moral character, there having no disciplinary action taken against him/her as of the date of application. </p>
+<h5>Printed Name and Signature of Principal / Guidance Counselor: <input type="file" name="signature"> </h5>
+<h5> Date: <input type="date" placeholder="Date" required> </h5>
+
+<h2> FORM C | PRINCIPAL'S CERTIFICATE </h2>
+<h4>TO WHOM IT MAY CONCERN: </h4>
+<p> This is to certify that <input type="text" placeholder="Name of Applicant" required> has to the top 10 of the graduating class for S.Y 2023-2024. </p>
+<h6> <input type="number" name="num" placeholder="Number" required> Total Number of Graduating Class </h6>
+<h5>Printed Name and Signature of Principal: <input type="file" name="signature"> </h5>
+<h5> Date: <input type="date" placeholder="Date" required> </h5>
+
+<h2> FORM D | CERTIFICATE OF RESIDENCY </h2>
+<h4>TO WHOM IT MAY CONCERN: </h4>
+<p> This is to certify that <input type="text" placeholder="Name of Applicant" required> is a bonafide resident of <input type="text" placeholder="Name of Barangay and Municipality" required> for  <input type="number" name="num" placeholder="Number" required> Year/s </p>
+<h5>Printed Name and Signature of Barangay Captain: <input type="file" name="signature"> </h5>
+<h5> Date: <input type="date" placeholder="Date" required> </h5>
+
+<h2> FORM E | SIGNED DECLARATION BY APPLICANT AND THE PARENTS/LEGAL GUARDIAN </h2>
+<p>I/We herebby certify to the truthfulness and completeness of information provided. Any misinformation or withholding of information will automatically disqualify my/our son/daughter from the Application in LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL.</p>
+<p> Moreover, I/We hereby express my/our consent for the LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL to collect, record, and use my personal data for the preparation of reports and other documents necessary for the purpose of application and admission. I/We hereby affirm our consent to provide our personal data for the aftermentioned purpose pursuant to the Data Privacy Act of 2012. </p>
+
+<div class="personal-info">
+    <div class="bd-box">
+        <h3>Applicant's Signature Over Printed Name: <input type="file" name="signature"> </h3>
+        <h5> Date Signed: <input type="date" required> </h5>
+    </div>
+    <div class="input-box">
+        <h3> Father's Signature Over Printed Name <input type="file" name="signature"> </h3>  
+        <h5> Date Signed: <input type="date" placeholder="Date" required> </h5>
+    </div>
+    <div class="input-box">
+        <h3> Mother's Signature Over Printed Name <input type="file" name="signature"> </h3>  
+        <h5> Date Signed: <input type="date" placeholder="Date" required> </h5>
+    </div>
+    <div class="bd-box">
+        <h3> Legal Guardian's Signature Over Printed Name <input type="file" name="signature"> </h3>  
+        <h5> Date Signed: <input type="date" placeholder="Date" required> </h5>
+    </div>
+</div>
+
+</div>
+
+</form>  
+<a href="page2.html">
+    <button> Next </button>
+</a>
+</body>
