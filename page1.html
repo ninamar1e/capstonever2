@@ -11,9 +11,9 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <link rel="icon" href="static\images\DJAPINHS logo.png" type="image/png" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
     <link rel="stylesheet" href="/static/styles/style.css" />
-    <title> LCSNHS Registration Portal </title>
+    <title> LCSINHS Registration Portal </title>
   </head>
 
 <body>
@@ -38,13 +38,23 @@
                             SCHOOLS DIVISION OF LIPA CITY
                         </strong></p>
                         <p class="h1">LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL</p>
+                       </div>
             </div>
     </div> 
 <hr>
 
+<p class="h6">Instructions: Write your personal information in the box provided or check the box when appropriate.</p>
+<p class="h6">PLEASE ANSWER ALL ITEMS. ALL ENTRIES AND SIGNATURE IN THIS FORM MUST BE ORIGINAL.</p>
+
 <div class="container">
     <form action="connect.php"  method="post">
-        <div class="p-3 mb-2 bg-dark text-light">FORM A | Personal Information</div>
+        <div class="p-3 mb-2 bg-dark text-light">FORM A | Personal Information 
+          <div class="container mt-3">
+            <div class="col-6">
+                <div class="rounded float-right"><input type="file" class="form-control" id="customFile" alt="insert 1 x 1"></div>		  
+             </div>
+           </div>
+        </div> 
         <p class="h4">Personal Data:</p>
         <p><strong>1. Name of Pupil Applicant</strong></p>
     <form>
@@ -61,22 +71,22 @@
             <label for="lastname">Last Name</label>
             <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
           </div>
+          <div class="col-md-6">
+            <label for="birthdate"><strong>2. Birth Date</strong></label>
+            <p class="h6"> Birth Date: <input type="date" placeholder="Date" required></p>
+            </div>
         </div>
-
-        <p><strong>2. Birth Date</strong></p>
-        
-        <h5> Date: <input type="date" placeholder="Date" required> </h5>
 
         <p><strong>3. Sex</strong></p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="Male" id="Gender1" required>
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioMale1">
+            <label class="form-check-label" for="flexRadioMale1">
               Male
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Female" id="Gender2" required>
-            <label class="form-check-label" for="flexRadioDefault2">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioFemale2">
+            <label class="form-check-label" for="flexRadioFemale2">
               Female
             </label>
           </div>
@@ -92,35 +102,34 @@
 
             <p><strong>5. Email Address</strong></p>
             <div class="row mb-3">
-              <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" required>
+                <input type="email" class="form-control" id="email" placeholder="Email Address" required>
               </div>
             </div>
 
             <p><strong>6. Complete Home / Permanent Address</strong></p>
         <div class="row">
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputAddress1" placeholder="Home Address" required>
+            <input type="text" class="form-control" id="address1" placeholder="Home Address" required>
         </div>
         <div class="form-group col-md-2">
-          <input type="number" class="form-control" id="inputZip" placeholder="Zip Code" required>
+          <input type="number" class="form-control" id="zip" placeholder="Zip Code" required>
         </div>
       </div>
 
         <p><strong>7. Name of City / Municipality</strong></p>
         <div class="form-group">
-          <input type="text" class="form-control" id="inputAddress2" placeholder="City / Municipality" required>
+          <input type="text" class="form-control" id="address2" placeholder="City / Municipality" required>
         </div>
 
         <p><strong>8. Name of School Last Attended</strong></p>
         <div class="form-group">
-          <input type="text" class="form-control" id="inputschoolname" placeholder="Full Name of School" required>
+          <input type="text" class="form-control" id="schoolname" placeholder="Full Name of School" required>
         </div>
 
         <p><strong>9. Complete School Address</strong></p>
           <div class="col-sm-8">
-          <input type="text" class="form-control" id="inputAddress3" placeholder="School Address" required>
+          <input type="text" class="form-control" id="address3" placeholder="School Address" required>
         </div>
         <div class="col-sm-8">
 
@@ -130,19 +139,19 @@
               <input type="tel" id="typePhone" class="form-control" placeholder="School Phone Number" required>
         </div>
         <div class="col-md-6">
-          <input type="text" class="form-control" id="inputLRN" placeholder="Learner's Reference No" required>
+          <input type="number" class="form-control" id="lrn" placeholder="Learner's Reference No" required>
         </div>
 
         <p><strong>11. School Type</strong></p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="Private" id="school1" required>
-            <label class="form-check-label" for="flexRadioDefault1">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioSchool1">
+            <label class="form-check-label" for="flexRadioSchool1">
               Private
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="Public" id="school2" required>
-            <label class="form-check-label" for="flexRadioDefault2">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioSchool2">
+            <label class="form-check-label" for="flexRadioSchool2">
               Public
             </label>
           </div>
@@ -152,81 +161,86 @@
 
 <hr>
 
-<div class="p-3 mb-2 bg-dark text-light">FORM B | Certificate of Good Moral Character</div>
-<p class="h4">TO WHOM IT MAY CONCERN:</p>
+    <div class="p-3 mb-2 bg-dark text-light">FORM B | Certificate of Good Moral Character</div>
+    <p class="h4">TO WHOM IT MAY CONCERN:</p>
 
-<ul class="list-inline">
-  <li class="list-inline-item">  This is to  certify that</li>
-  <li class="list-inline-item"> <input type="text" class="form-control" placeholder="Name of Applicant" required></li>
-has consistently maintained good moral character, there having no disciplinary action taken against him/her as of the date of application.
-</ul>
+    <ul class="list-inline">
+      <li class="list-inline-item">  This is to  certify that</li>
+      <li class="list-inline-item"> <input type="text" class="form-control" placeholder="Name of Applicant" required></li>
+    has consistently maintained good moral character, there having no disciplinary action taken against him/her as of the date of application.
+    </ul>
 
-<label class="form-label" for="customFile">Printed Name and Signature of Principal / Guidance Counselor</label>
-<input type="file" class="form-control" id="customFile"/>
-<h5> Date: <input type="date" placeholder="Date" required> </h5>
+    <label class="form-label" for="customFile"><p class="h6">Printed Name and Signature of Principal / Guidance Counselor</p></label>
+    <input type="file" class="form-control" id="customFile"/>
+    <p class="h6"> Date: <input type="date" placeholder="Date" required></p>
+
+    <hr>
+
+    <div class="p-3 mb-2 bg-dark text-light">FORM C | PRINCIPAL'S CERTIFICATE</div>
+    <p class="h4">TO WHOM IT MAY CONCERN:</p>
+
+    <ul class="list-inline">
+      <li class="list-inline-item">  This is to  certify that</li>
+      <li class="list-inline-item"> <input type="text" class="form-control" placeholder="Name of Applicant" required></li>
+    as to the top 10 of the graduating class for S.Y 2023-2024.
+      <li class="list-inline-item"> <input type="number" class="form-control" id="number" placeholder="Rank" required></li> 
+    Total number of Graduating Class
+    </ul>
+
+    <label class="form-label" for="customFile"><p class="h6">Printed Name and Signature of Principal</p></label>
+    <input type="file" class="form-control" id="customFile"/>
+    <p class="h6"> Date: <input type="date" placeholder="Date" required></p>
+
+    <hr>
+
+    <div class="p-3 mb-2 bg-dark text-light">FORM D | CERTIFICATE OF RESIDENCY</div>
+    <p class="h4">TO WHOM IT MAY CONCERN:</p>
+
+    <ul class="list-inline">
+      <li class="list-inline-item">  This is to  certify that</li>
+      <li class="list-inline-item"> <input type="text" class="form-control" placeholder="Name of Applicant" required></li>
+      is a bonafide resident of 
+      <li class="list-inline-item"> <input type="text" class="form-control" placeholder="Name of Barangay and Municipality" required></li>
+        for 
+      <li class="list-inline-item"> <input type="number" class="form-control" id="number" placeholder="Year/s" required></li>
+    </ul>
+
+    <label class="form-label" for="customFile"><p class="h6">Printed Name and Signature of Barangay Captain</p></label>
+    <input type="file" class="form-control" id="customFile"/>
+    <p class="h6"> Date: <input type="date" placeholder="Date" required></p>
 
 <hr>
 
-<div class="p-3 mb-2 bg-dark text-light">FORM C | PRINCIPAL'S CERTIFICATE</div>
-<p class="h4">TO WHOM IT MAY CONCERN:</p>
+<div class="p-3 mb-2 bg-dark text-light">FORM E | SIGNED DECLARATION BY APPLICANT AND THE PARENTS/LEGAL GUARDIAN</div>
 
-<ul class="list-inline">
-  <li class="list-inline-item">  This is to  certify that</li>
-  <li class="list-inline-item"> <input type="text" class="form-control" placeholder="Name of Applicant" required></li>
-  <li class="list-inline-item">as to the top 10 of the graduating class for S.Y 2023-2024. </li>
-  <input type="number" class="form-control" id="inputNumber" placeholder="Rank" required>
-  Total number of Graduating Class
-</ul>
+<p class="lead">
+  I/We herebby certify to the truthfulness and completeness of information provided. Any misinformation or withholding of information will automatically disqualify my/our son/daughter from the Application in <b> LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL.</b>
+</p>
+<p class="lead">
+Moreover, I/We hereby express my/our consent for the <b> LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL </b> to collect, record, and use my personal data for the preparation of reports and other documents necessary for the purpose of application and admission. I/We hereby affirm our consent to provide our personal data for the aftermentioned purpose pursuant to the <b> Data Privacy Act of 2012.</b>
+</p>
 
-<label class="form-label" for="customFile">Printed Name and Signature of Principal / Guidance Counselor</label>
-<input type="file" class="form-control" id="customFile"/>
-<h5> Date: <input type="date" placeholder="Date" required> </h5>
+      <label class="form-label" for="customFile"><p class="h6">Applicant's Signature Over Printed Name:</p></label>
+      <input type="file" class="form-control" id="customFile"/>
+      <p class="h6"> Date Signed: <input type="date" placeholder="Date" required></p>
 
-<hr>
+      <label class="form-label" for="customFile"><p class="h6">Father's Signature Over Printed Name:</p></label>
+      <input type="file" class="form-control" id="customFile"/>
+      <p class="h6"> Date Signed: <input type="date" placeholder="Date" required></p>
 
-<div class="p-3 mb-2 bg-dark text-light">FORM D | CERTIFICATE OF RESIDENCY</div>
-<p class="h4">TO WHOM IT MAY CONCERN:</p>
+      <label class="form-label" for="customFile"><p class="h6">Mother's Signature Over Printed Name:</p></label>
+      <input type="file" class="form-control" id="customFile"/>
+      <p class="h6"> Date Signed: <input type="date" placeholder="Date" required></p>
 
-<ul class="list-inline">
-  <li class="list-inline-item">  This is to  certify that</li>
-  <li class="list-inline-item"> <input type="text" class="form-control" placeholder="Name of Applicant" required></li>
-  is a bonafide resident of <input type="text" class="form-control" placeholder="Name of Applicant" required> for <input type="number" class="form-control" id="inputNumber" placeholder="Year/s" required>
-</ul>
-
-<label class="form-label" for="customFile">Printed Name and Signature of Principal / Guidance Counselor</label>
-<input type="file" class="form-control" id="customFile"/>
-<h5> Date: <input type="date" placeholder="Date" required> </h5>
-
-<hr>
-
-
-<h2> FORM E | SIGNED DECLARATION BY APPLICANT AND THE PARENTS/LEGAL GUARDIAN </h2>
-<p>I/We herebby certify to the truthfulness and completeness of information provided. Any misinformation or withholding of information will automatically disqualify my/our son/daughter from the Application in LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL.</p>
-<p> Moreover, I/We hereby express my/our consent for the LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL to collect, record, and use my personal data for the preparation of reports and other documents necessary for the purpose of application and admission. I/We hereby affirm our consent to provide our personal data for the aftermentioned purpose pursuant to the Data Privacy Act of 2012. </p>
-
-<div class="personal-info">
-    <div class="bd-box">
-        <h3>Applicant's Signature Over Printed Name: <input type="file" name="signature"> </h3>
-        <h5> Date Signed: <input type="date" required> </h5>
-    </div>
-    <div class="input-box">
-        <h3> Father's Signature Over Printed Name <input type="file" name="signature"> </h3>  
-        <h5> Date Signed: <input type="date" placeholder="Date" required> </h5>
-    </div>
-    <div class="input-box">
-        <h3> Mother's Signature Over Printed Name <input type="file" name="signature"> </h3>  
-        <h5> Date Signed: <input type="date" placeholder="Date" required> </h5>
-    </div>
-    <div class="bd-box">
-        <h3> Legal Guardian's Signature Over Printed Name <input type="file" name="signature"> </h3>  
-        <h5> Date Signed: <input type="date" placeholder="Date" required> </h5>
+      <label class="form-label" for="customFile"><p class="h6">Legal Guardian's Signature Over Printed Name:</p></label>
+      <input type="file" class="form-control" id="customFile"/>
+      <p class="h6"> Date Signed: <input type="date" placeholder="Date" required></p>
     </div>
 </div>
-
-</div>
-
 </form>  
 <a href="page2.html">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button class="btn btn-dark" type="button">Next</button>
+  </div>
 </a>
 </body>
