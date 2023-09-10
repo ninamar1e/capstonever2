@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/static/styles/style.css" />
+    <title> LCSINHS Enrollment Portal </title>
+  </head>
+<body>
+    <div class="header-wrapper">
+        <div class="container">
+    <header role="banner">
+    <div class="row row-with-vspace site-branding">
+        
+            <div class="col-sm-2  site-title">
+                <h1 class="header-logo">
+                <a href="https://sites.google.com/deped.gov.ph/lipacityscienceinhs/home" title="LCSINHS" rel="home"><img src="img/beef.jpg" class="img-responsive" style="width:60%"></a>
+                </h1>
+            </div>
+            <div class="col-sm-10 page-header-top-right">
+            <div class="head-description">
+                        <p><strong>ENHANCED BASIC EDUCATION ENROLLMENT FORM</strong></p>
+                        <p class="h1">LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL</p>
+            </div>
+    </div> 
+    <hr>
+
+    <div class="container">
+        <form>
+                <label for="gradelevel">School Year</label>
+                <div class="col">
+                    <label for="gradelevel">Grade Level to Enroll</label>
+                    <input type="number" class="form-control" id="gradelevel" placeholder="Grade Level" required>
+                </div>
+                <div class="col-md-6">
+                <p><strong>1. With LRN</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioYes5">
+                        <label class="form-check-label" for="flexRadioYes5">
+                        Yes
+                        </label>
+                      </form>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioNo6">
+                        <label class="form-check-label" for="flexRadioNo6">
+                        No
+                        </label>
+                      </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                <p><strong>2. Returning (Balik-Aral) </strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioYes7">
+                        <label class="form-check-label" for="flexRadioYes7">
+                        Yes
+                      </label>
+                    </form>
+                  </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioNo8">
+                        <label class="form-check-label" for="flexRadioNo8">
+                        No
+                      </label>
+                    </form>
+                  </div>
+              </div> 
+            </div>
+
+<hr>
+
+<div class="p-3 mb-2 bg-dark text-light">LEARNER INFORMATION</div>
+            <p><strong>PSA Birth Certificate No.</strong><em>(If available upon registration)</em></p>
+            <div class="col-md-6">
+                <input type="number" class="form-control" id="PSA" placeholder="PSA Number" required>
+              </div>
+            <div class="col-md-6">
+                <input type="number" class="form-control" id="lrn" placeholder="Learner's Reference No" required>
+            </div>
+            <div class="col-md-6">
+                <label for="firstname"><strong>First Name</strong></label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+              </div>
+              <div class=" col-md-6">
+                <label for="middlename"><strong>Middle Name</strong></label>
+                <input type="text" class="form-control" id="middlename" placeholder="Middle Name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="lastname"><strong>Last Name</strong></label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="extensionname"><strong>Extension Name e.g, Jr, III (if applicable)</strong></label>
+                <input type="text" class="form-control" id="extensionname" placeholder="Extension Name" required>
+              </div>
+            </div>
+
+        <div class="row">
+            <div class="col">
+                <p><strong>Birth Date</strong></p>
+                <h5> Date: <input type="date" placeholder="Date" required> </h5>
+            </div>
+            <div class="col">
+                <label for="age"><strong>Age</strong></label>
+                <input type="number" class="form-control" id="age" placeholder="Age" required>
+            </div>
+            <div class="col">
+            <p><strong>Sex</strong></p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioMale1">
+                <label class="form-check-label" for="flexRadioMale1">
+                  Male
+                </label>
+              </form>
+          </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioFemale1">
+                <label class="form-check-label" for="flexRadioFemale1">
+                  Female
+                </label>
+              </form>
+            </div>
+          </div>
+
+            <div class="col-md-6">
+                <label for="birthplace"><strong>Place of Birth</strong></label>
+                <input type="text" class="form-control" id="placebirth" placeholder="Place of Birth (Municipality/City)" required>
+              </div>
+              <div class="col-md-6">
+                <label for="language"><strong>Mother Tongue</strong></label>
+                <input type="text" class="form-control" id="language" placeholder="Mother Tongue" required>
+              </div>
+          
+    
+            <div class="col">
+                <p><strong>Belonging to any Ingdigeneous People (IP) Community/Indegenous Cultural Community</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioYes9">
+                        <label class="form-check-label" for="flexRadioYes9">
+                        Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioNo10">
+                        <label class="form-check-label" for="flexRadioNo10">
+                        No
+                        </label>
+                    </div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">If YES, please specify</li>
+                        <li class="list-inline-item"> <input type="text" class="form-control" placeholder="required" required></li>
+                      </ul>
+                <p><strong>Is your family a beneficiary of 4Ps?</strong></p>
+                <label for="beneficiary">If YES, write the 4Ps Household ID Number below</label>
+                <input type="number" class="form-control" id="beneficiary" placeholder="Household Number" required>
+                </div>
+
+<hr>
+            <div class="container">
+                <div class="p-3 mb-2 bg-dark text-light">Current Address</div>
+                  <div class="row">
+                    <div class="col">
+                        <input type="number" class="form-control" id="houseNo" placeholder="House No./Street" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="streetNo" placeholder="Street Name" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="barangay" placeholder="Barangay" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="Municipality" placeholder="Municipality/City" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="Province" placeholder="Province" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="Country" placeholder="Country" required>
+                    </div>
+                    <div class="col">
+                        <input type="number" class="form-control" id="inputZip" placeholder="Zip Code" required>
+                    </div>
+                </div>
+            </div>
+
+<hr>
+
+            <div class="container">
+              <div class="p-3 mb-2 bg-dark text-light">Permanent Address<br><em>(Same with your Current Address?)</em></p></div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioYes11">
+                    <label class="form-check-label" for="flexRadioYes11">
+                    Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioNo12">
+                    <label class="form-check-label" for="flexRadioNo12">
+                    No
+                    </label>
+                </div>
+                <hr>
+                  <div class="row">
+                    <div class="col">
+                        <input type="number" class="form-control" id="houseNo" placeholder="House No./Street" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="streetNo" placeholder="Street Name" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="barangay" placeholder="Barangay" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="Municipality" placeholder="Municipality/City" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="Province" placeholder="Province" required>
+                    </div>
+                    <div class="col">
+                        <input type="type" class="form-control" id="Country" placeholder="Country" required>
+                    </div>
+                    <div class="col">
+                        <input type="number" class="form-control" id="inputZip" placeholder="Zip Code" required>
+                    </div>
+                </div>
+            </div>
+
+<hr>
+
+<div class="container">
+    <div class="p-3 mb-2 bg-dark text-light">PARENT'S/GUARDIAN INFORMATION</div>
+        <p><strong>Fathers Name</strong></p>
+        <form>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+              </div>
+              <div class=" col-md-6">
+                <input type="text" class="form-control" id="middlename" placeholder="Middle Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" id="contact" placeholder="Contact Number" required>
+              </div>
+            </div>
+            <p><strong>Mother Name</strong></p>
+            <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+                  </div>
+                  <div class=" col-md-6">
+                    <input type="text" class="form-control" id="middlename" placeholder="Middle Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="tel" class="form-control" id="contact" placeholder="Contact Number" required>
+                  </div>
+                </div>
+              <p><strong>Guardian's Name</strong></p>
+                <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+                      </div>
+                      <div class=" col-md-6">
+                        <input type="text" class="form-control" id="middlename" placeholder="Middle Name" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="tel" class="form-control" id="contact" placeholder="Contact Number" required>
+                      </div>
+                    </div>
+<hr>
+
+<div class="container">
+    <div class="p-3 mb-2 bg-dark text-light">For Returning Learner (Balik-Aral) and those who will Transfer/Move In</div>
+    <form>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="lastgrade" placeholder="Last Grade Level Completed" required>
+          </div>
+          <div class=" col-md-6">
+            <input type="type" class="form-control" id="lastschool" placeholder="Last School Attended" required>
+          </div>
+          <div class=" col-md-6">
+            <input type="number" class="form-control" id="lastschoolyr" placeholder="Last School Year Completed" required>
+          </div>
+          <div class="form-group col-md-2">
+            <input type="number" class="form-control" id="schoolID" placeholder="School ID" required>
+          </div>
+<hr>
+
+<div class="container">
+  <div class="p-3 mb-2 bg-dark text-light">For Learners in Senior High School</div>
+  <div class="row">
+    <div class="col">
+    <p><strong>Semester</strong></p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioYes5">
+            <label class="form-check-label" for="flexRadioYes5">
+              1st Semester
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioNo6">
+            <label class="form-check-label" for="flexRadioNo6">
+            2nd Semester
+            </label>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="trackstrand" placeholder="Track Strand" required>
+        </div>
+    </div>
+
+</div>
+</form>
+</body>
+</html>

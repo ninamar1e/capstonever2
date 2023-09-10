@@ -47,7 +47,6 @@
 <p class="h6">PLEASE ANSWER ALL ITEMS. ALL ENTRIES AND SIGNATURE IN THIS FORM MUST BE ORIGINAL.</p>
 
 <div class="container">
-    <form action="connect.php"  method="post">
         <div class="p-3 mb-2 bg-dark text-light">FORM A | Personal Information 
           <div class="container mt-3">
             <div class="col-6">
@@ -61,15 +60,15 @@
         <div class="row">
           <div class="col-md-6">
             <label for="firstname">First Name</label>
-            <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" required>
           </div>
           <div class=" col-md-6">
             <label for="middlename">Middle Name</label>
-            <input type="text" class="form-control" id="middlename" placeholder="Middle Name" required>
+            <input type="text" class="form-control" id="middlename" name="middlename" placeholder="Middle Name" required>
           </div>
           <div class="col-md-6">
             <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
+            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" required>
           </div>
           <div class="col-md-6">
             <label for="birthdate"><strong>2. Birth Date</strong></label>
@@ -79,31 +78,32 @@
 
         <p><strong>3. Sex</strong></p>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioMale1">
+            <input class="form-check-input" type="radio" name="gender" id="flexRadioMale1" value="m">
             <label class="form-check-label" for="flexRadioMale1">
               Male
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioFemale2">
+            <input class="form-check-input" type="radio" name="gender" id="flexRadioFemale2" value="f">
             <label class="form-check-label" for="flexRadioFemale2">
               Female
             </label>
-          </div>
+          </form>
+        </div>
 
           <p><strong>4. Contact Numbers</strong><br><em>(Include all possible contact number)</em></p>
           <div class="row">
             <div class="col-md-6">
-                <input type="tel" id="typePhone" class="form-control" placeholder="Phone Number" required>
+                <input type="tel" id="typePhone" class="form-control" name="number" placeholder="Phone Number" required>
             </div>
             <div class="col-md-6">
-                <input type="tel" id="typePhone" class="form-control" placeholder="Phone Number" required>
+                <input type="tel" id="typePhone" class="form-control" name="number" placeholder="Phone Number" required>
             </div>
 
             <p><strong>5. Email Address</strong></p>
             <div class="row mb-3">
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
               </div>
             </div>
 
@@ -214,33 +214,35 @@
 <div class="p-3 mb-2 bg-dark text-light">FORM E | SIGNED DECLARATION BY APPLICANT AND THE PARENTS/LEGAL GUARDIAN</div>
 
 <p class="lead">
-  I/We herebby certify to the truthfulness and completeness of information provided. Any misinformation or withholding of information will automatically disqualify my/our son/daughter from the Application in <b> LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL.</b>
+  I/We hereby certify to the truthfulness and completeness of information provided. Any misinformation or withholding of information will automatically disqualify my/our son/daughter from the Application in <b> LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL.</b>
 </p>
 <p class="lead">
 Moreover, I/We hereby express my/our consent for the <b> LIPA CITY SCIENCE INTEGRATED NATIONAL HIGH SCHOOL </b> to collect, record, and use my personal data for the preparation of reports and other documents necessary for the purpose of application and admission. I/We hereby affirm our consent to provide our personal data for the aftermentioned purpose pursuant to the <b> Data Privacy Act of 2012.</b>
 </p>
 
-      <label class="form-label" for="customFile"><p class="h6">Applicant's Signature Over Printed Name:</p></label>
+      <label class="form-label" for="customFile"><p class="h5">Applicant's Signature Over Printed Name:</p></label>
       <input type="file" class="form-control" id="customFile"/>
       <p class="h6"> Date Signed: <input type="date" placeholder="Date" required></p>
 
-      <label class="form-label" for="customFile"><p class="h6">Father's Signature Over Printed Name:</p></label>
+      <label class="form-label" for="customFile"><p class="h5">Father's Signature Over Printed Name:</p></label>
       <input type="file" class="form-control" id="customFile"/>
       <p class="h6"> Date Signed: <input type="date" placeholder="Date" required></p>
 
-      <label class="form-label" for="customFile"><p class="h6">Mother's Signature Over Printed Name:</p></label>
+      <label class="form-label" for="customFile"><p class="h5">Mother's Signature Over Printed Name:</p></label>
       <input type="file" class="form-control" id="customFile"/>
       <p class="h6"> Date Signed: <input type="date" placeholder="Date" required></p>
 
-      <label class="form-label" for="customFile"><p class="h6">Legal Guardian's Signature Over Printed Name:</p></label>
+      <label class="form-label" for="customFile"><p class="h5">Legal Guardian's Signature Over Printed Name:</p></label>
       <input type="file" class="form-control" id="customFile"/>
       <p class="h6"> Date Signed: <input type="date" placeholder="Date" required></p>
     </div>
 </div>
-</form>  
-<a href="page2.html">
+</form> 
+ 
+<a href="reg2.html">
   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
     <button class="btn btn-dark" type="button">Next</button>
   </div>
 </a>
 </body>
+</html>
